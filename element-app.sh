@@ -32,7 +32,7 @@ get_component_name () {
 get_clean_component_name () {
   comp_name=$(get_component_name)
   char=''
-  echo ${comp_name/-/$char}
+  echo ${comp_name//[-]/$char}
 }
 # Colors
 ESC_SEQ="\x1b["
